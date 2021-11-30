@@ -110,6 +110,6 @@ public class PassportService {
         Date startDate = new Date(System.currentTimeMillis());
         calendar.setTime(startDate);
         calendar.add(GregorianCalendar.MONTH, 3);
-        return repository.findAllByEndDateBetween(startDate, calendar.getTime());
+        return repository.findAllByEndDateBefore(calendar.getTime());
     }
 }

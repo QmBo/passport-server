@@ -30,13 +30,4 @@ public interface PassportRepository extends CrudRepository<Passport, Integer> {
      * @return the list
      */
     List<Passport> findAllByEndDateBefore(Date date);
-
-    /**
-     * Find all by end date between list.
-     *
-     * @param startDate the start date
-     * @param endDate   the end date
-     * @return the list
-     */
-    List<Passport> findAllByEndDateBetween(Date startDate, Date endDate);
 }
